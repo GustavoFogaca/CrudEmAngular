@@ -1,2 +1,3 @@
 # CrudEmAngular
-Projeto desenvolvido em angular
+Projeto crud desenvolvido em angular
+com formulario de apresentação dos dados
