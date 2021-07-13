@@ -1,0 +1,64 @@
+<mat-card>
+  <mat-card-title>Atualizar Cadastro</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Nome"
+        [value]="user.name"
+        name="name"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Data de Nascimento"
+        [value]="user.date"
+        name="date"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="CPF"
+        [(ngModel)]="user.cpf"
+        name="cpf"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="e-mail"
+        [(ngModel)]="user.mail"
+        name="mail"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="telefone"
+        [(ngModel)]="user.phone"
+        name="phone"
+        disabled
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="data Cadastro"
+        [(ngModel)]="user.dataCadastro"
+        name="dataCadastro"
+        disabled
+      />
+    </mat-form-field>
+  </form>
+  <button class="deleteButton" mat-raised-button (click)="deleteUser()">
+    Excluir Usuario
+  </button>
+
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>

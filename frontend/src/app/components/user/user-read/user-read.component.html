@@ -1,0 +1,73 @@
+<div class="mat-elevation-z4">
+  <table mat-table [dataSource]="users" matSort>
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+      <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Nome</th>
+      <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+    </ng-container>
+
+    <!-- DATE Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Aniversario</th>
+      <td mat-cell *matCellDef="let row">{{ row.date }}</td>
+    </ng-container>
+
+    <!-- CPF Column -->
+    <ng-container matColumnDef="cpf">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>cpf</th>
+      <td mat-cell *matCellDef="let row">{{ row.cpf }}</td>
+    </ng-container>
+
+    <!-- MAIL Column -->
+    <ng-container matColumnDef="mail">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>mail</th>
+      <td mat-cell *matCellDef="let row">{{ row.mail }}</td>
+    </ng-container>
+
+    <!-- PHONE  Column -->
+    <ng-container matColumnDef="phone">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Telefone</th>
+      <td mat-cell *matCellDef="let row">{{ row.phone }}</td>
+    </ng-container>
+
+    <!-- Data Cadastro  Column -->
+    <ng-container matColumnDef="dataCadastro">
+      <!-- *ngFor="let dessert of sortedData" -->
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Data Cadastro</th>
+      <td mat-cell *matCellDef="let row">
+        {{ row.dataCadastro }}
+      </td>
+    </ng-container>
+
+    <!-- ACTION  Column -->
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef>Editar</th>
+      <td mat-cell *matCellDef="let row">
+        <a routerLink="/users/update/{{ row.id }}" class="edit">
+          <i class="material-icons"> edit </i>
+        </a>
+        <a routerLink="/users/delete/{{ row.id }}" class="delete">
+          <i class="material-icons"> delete </i>
+        </a>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <!-- <mat-paginator
+    #paginator
+    [length]="dataSource?.data.length"
+    [pageIndex]="0"
+    [pageSize]="5"
+    [pageSizeOptions]="[5, 10, 25]"
+  >
+  </mat-paginator> -->
+</div>

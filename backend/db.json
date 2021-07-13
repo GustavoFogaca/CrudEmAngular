@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "Henry Henrique Fogaca",
+      "date": "15/03/1996",
+      "cpf": "09529282906",
+      "mail": "teste2@gmail.com",
+      "phone": "4198218238",
+      "dataCadastro": "02/06/2021"
+    },
+    {
+      "id": 3,
+      "name": "Lucas G. Fogaca",
+      "date": "15/06/2004",
+      "cpf": "09529482932",
+      "mail": "teste123@gmail.com",
+      "phone": "4198918333",
+      "dataCadastro": "30/05/2021"
+    },
+    {
+      "name": "Gustavo Henrique Fogaca",
+      "date": "15/06/1996",
+      "cpf": "05554443",
+      "mail": "gustavohfogaca@gmail.com",
+      "phone": "41996938278",
+      "dataCadastro": "15/06/2021",
+      "id": 4
+    },
+    {
+      "name": "Larissa Fogaca",
+      "date": "05/09/1997",
+      "cpf": "066556565",
+      "mail": "lari@gmail.com",
+      "phone": "41555544433",
+      "dataCadastro": "05/07/2021",
+      "id": 5
+    },
+    {
+      "name": "Nilceia",
+      "date": "15/06/1974",
+      "cpf": "055544433",
+      "mail": "nil@gmail.com",
+      "phone": "415554433",
+      "dataCadastro": "04/07/2021",
+      "id": 6
+    }
+  ]
+}
